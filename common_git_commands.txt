@@ -1,0 +1,18 @@
+git diff
+git log
+git clone
+git status
+git checkout
+git init --> creates a new git repository out of the files in the current folder, does not commit anything yet though
+git add --> adds files to the staging area, preparing them to be added in as a single commit
+git reset --> removes files form the staging area
+
+git commit -m "Commit message" --> adds a message to your commit
+
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
