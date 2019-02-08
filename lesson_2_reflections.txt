@@ -1,0 +1,6 @@
+Lesson_2_reflections
+1. What happens when you initialize a repository? Why do you need to do it?
+Using the git init command you initialize a new repository. This creates a .git file but does not create a first commit. The repository contains all of the files from that directory (currently just "untracked files")
+
+2. How is the staging area different from the working directory and the repository? What value do you think it offers?
+The staging area is a mid-way point between the WD and the respository, it allows you to choose which files to add to your commit and make changes to which files to include without officially commiting them until you are ready.
