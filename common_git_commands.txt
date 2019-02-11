@@ -1,4 +1,4 @@
-git diff
+git diff commitID1 commitID2
 git log
 git clone
 git status
@@ -16,3 +16,9 @@ git commit -m "Commit message" --> adds a message to your commit
 After doing this, you may fix the identity used for this commit with:
 
     git commit --amend --reset-author
+
+
+git diff with no args with compare the file in the working directory and the version in the staging area
+git diff --staged compares what is in the staging area and the most recent commit in the repository
+
+git reset --hard will delete all teh changes in the files in the working directory as well as the staging area
