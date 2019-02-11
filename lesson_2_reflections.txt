@@ -4,3 +4,6 @@ Using the git init command you initialize a new repository. This creates a .git 
 
 2. How is the staging area different from the working directory and the repository? What value do you think it offers?
 The staging area is a mid-way point between the WD and the respository, it allows you to choose which files to add to your commit and make changes to which files to include without officially commiting them until you are ready.
+
+3. How can you use the staging area to make sure you have one commit per logical change?
+by checking git status you can track which changes are going in to the upcoming commit, giving you one more chance to verify what you have altered.
