@@ -62,4 +62,13 @@ git merge master coins --> Auto-merging game.js , Merge made by the 'recursive' 
 
 git show [commit_id} --> shows you the differences between a specific commit and its parent (without knowing the parents id), thsi is helpful when branches have been merged and the log has multiple branch commits lumped together
 
-git branch -d [branch_name] --> deletes a branch, 
+git branch -d [branch_name] --> deletes a branch
+
+git remote --> will show you any current remotes, this is similar to git branch. branches and remotes will behave similarly in this manner
+
+If you only have one remote, it is standard to name it "Origin"
+git remote add origin https://github.com/laconver/refelctions.git --> adds a remote and points it at the supplied URL
+
+git remote -v --> includes more information like the URL in the git remote output (-v stands for verbose)
+
+git push origin master --> sends the master repository to the origin repository
