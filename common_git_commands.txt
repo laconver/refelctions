@@ -23,9 +23,43 @@ git diff --staged compares what is in the staging area and the most recent commi
 
 git reset --hard will delete all teh changes in the files in the working directory as well as the staging area
 
+git branch --> shows you the current available branches
+
+git branch [text] --> creates a new branch titled [text]
+
+git checkout [branch-name] --> switches you to the other branch (now denoted by a * when you enter git branch)
+
+git log --graph --oneline master coins easy-mode--> Creates a list of the Commit Notes of the noted branches and when they took place (Sample below)
+* ebed25e (easy-mode) Make asteroids split into 2 smaller pieces instead of 3
+* 8a9cd99 (master) Add bullet delay back in
+* 3884eab (origin/master, origin/HEAD) Add color
+* 3e42136 now using requestAnimationFrame
+* 4035769 frame interval was set wrong after game was paused
+* 25ede83 a couple missing ends with the ipad version
+* df03538 I can't spell 'screen' apparently :)
+| * 354dfdd (HEAD -> coins, origin/coins) Make ships able to spawn on coins
+| * 0c6daf1 Make it possible to collect coins
+| * a3c0ae4 Create helper functions
+| * 656b02e First pass at adding coins
+|/
+* b0678b1 Revert controls
+* f19cb1b Fix typo in space
+* 75928a9 Use space for movement and enter for shooting
+* ac83b72 mostly finished ipad version
+* 7ca4826 trying to get div touch controls to work
+* 3cb406e first pass at ipad controls
+
+git checkout -b [new_branch_name] --> This is the same thing as running git branch [new_branch_name] and then git checkout [new_branch_name]
+    We are creating a new branch with the recent changes made, and then we are checking it out to continue working with that branch
 
 
 
+git gc --> gc=garbage collection, which is run periodically by git, but git gc will do it manually which cleans up commits not associated or reachable by a branch
 
+git push --> Your branch is ahead of 'origin/master' by 1 commit. (use "git push" to publish your local commits)
 
+git merge master coins --> Auto-merging game.js , Merge made by the 'recursive' strategy.
 
+git show [commit_id} --> shows you the differences between a specific commit and its parent (without knowing the parents id), thsi is helpful when branches have been merged and the log has multiple branch commits lumped together
+
+git branch -d [branch_name] --> deletes a branch, 
