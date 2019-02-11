@@ -22,3 +22,10 @@ git diff with no args with compare the file in the working directory and the ver
 git diff --staged compares what is in the staging area and the most recent commit in the repository
 
 git reset --hard will delete all teh changes in the files in the working directory as well as the staging area
+
+
+
+
+
+
+
