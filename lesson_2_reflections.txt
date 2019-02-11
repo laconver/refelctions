@@ -7,3 +7,16 @@ The staging area is a mid-way point between the WD and the respository, it allow
 
 3. How can you use the staging area to make sure you have one commit per logical change?
 by checking git status you can track which changes are going in to the upcoming commit, giving you one more chance to verify what you have altered.
+
+4. What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Branches would be helpful when working on two different versions of a program, allowing you to try new things while still maintaining a full working version
+Master branch is the production quality branch that never breaks/always works, then the developement branch is where active work is taking place. You can also have an experiemental branch or new feature branch where you keep things that you're working on where you know it will break
+
+5. How do the diagrams help you visualize the branch structure?
+It will help show where certain changes have been made to each feature to then determine which commits are parents of certain branches and tips
+
+6. What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+The two tips are compared to the parent when the initial branch took place, any changes made will get included in the new merge. If a line was removed in one branch but not the other, it will be removed in the final merge. The diagram will help visualize where the branch started from and which commits took place in each branch leading up to the merge.
+
+7. What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+The auto merge is helpful for the easy diffs that need to be added while the manual merge is critical for looking at changes made by both branches to the same area of code to best determine which change should go in the final (new master tip) commit
